@@ -5,15 +5,15 @@
     /// This Class is responsible of making an object of MessageSender
     /// Which has methods that can send a message to 1 or more receivers
     /// </summary>
-    public  class MessageSender
+    public  class MessageSender :MessageBodyConverter
     {
-        public static void SendMessage(MessageCarrier type, Message m, bool isHTML)
+        public  void SendMessage(MessageCarrier type, Message m, bool isHTML)
         {
             //herinde sendes der en email ud til modtageren
             if (type.Equals(MessageCarrier.Smtp))
             {
                 if (isHTML)
-                    m.Body = MessageBodyConverter.ConvertBodyToHTML(m.Body);
+                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via Smtp
             }
 
@@ -30,14 +30,14 @@
             if (type.Equals(MessageCarrier.Smtp))
             {
                 if (isHTML)
-                    m.Body = MessageBodyConverter.ConvertBodyToHTML(m.Body);
+                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via Smtp
             }
 
             if (type.Equals(MessageCarrier.VMessage))
             {
                 if (isHTML)
-                    m.Body = MessageBodyConverter.ConvertBodyToHTML(m.Body);
+                    m.Body = ConvertBodyToHTML(m.Body);
                 //her implementeres alt koden til at sende via VMessage
             }
         }
