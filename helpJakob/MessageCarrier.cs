@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace HelpJakob
 {
-    class Program
+    public enum MessageCarrier
     {
-        static void Main(string[] args)
-        {
-        }
+        Smtp,
+        VMessage
     }
 }

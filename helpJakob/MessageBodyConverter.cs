@@ -1,4 +1,4 @@
-﻿namespace helpJakob
+﻿namespace HelpJakob
 {
     /// <summary>
     /// This Class is responsible of making a MessageBodyConverter object
