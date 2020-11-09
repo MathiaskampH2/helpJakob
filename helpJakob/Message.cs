@@ -7,6 +7,8 @@
     /// </summary>
     public  class Message
     {
+        // Comment from Mathias. I have made the set / get variable private instead of just "string"
+        // so you cannot change the variable after the Message object is instantiated 
         private string to, from, body, subject, cc;
 
         public string To { get => to; set => to = value; }

@@ -2,7 +2,7 @@
 {
     /// <summary>
     /// This Class is responsible of making a MessageBodyConverter object
-    /// Which has a method to Convert the Body of the message to HTML 
+    /// Which has a method to Convert the Body of the message to HTML
     /// </summary>
     public class MessageBodyConverter
     {
